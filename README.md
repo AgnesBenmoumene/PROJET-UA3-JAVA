@@ -29,7 +29,6 @@ Cette application Java permet de lire une liste d’étudiants depuis un fichier
 
 Depuis le dossier `src` :
 
-```bash
 javac *.java
 
 ### 2. execution du projet
