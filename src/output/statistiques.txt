@@ -1,0 +1,42 @@
+
+   RAPPORT STATISTIQUE -- GESTION DES NOTES D'ETUDIANTS
+
+
+INFORMATIONS GENERALES
+----------------------------------------
+  Nombre d'etudiants  : 15
+  Nombre de matieres  : 5
+  Moyenne de la promo : 12,83 / 20
+  Meilleur etudiant   : Emma PETIT (18,10)
+  Plus faible         : Hugo HENRY (7,10)
+
+STATISTIQUES PAR MATIERE
+----------------------------------------------------------
+  Matiere              | Moyenne  | Minimum  | Maximum 
+  ------------------------------------------------------
+  Mathematiques        | 12,90    | 6,00     | 19,00   
+  Informatique         | 13,33    | 7,50     | 19,00   
+  Physique             | 12,03    | 5,00     | 17,50   
+  Anglais              | 12,90    | 8,00     | 19,00   
+  Statistiques         | 13,00    | 7,00     | 20,00   
+
+CLASSEMENT FINAL
+----------------------------------------------------------
+  Rang | Etudiant                   | Moyenne | Mention
+  ------------------------------------------------------
+  1    | Emma PETIT                 | 18,10   | Très Bien
+  2    | Leila KARIM                | 17,10   | Très Bien
+  3    | Alice DUPONT               | 16,70   | Très Bien
+  4    | Inès IBANEZ                | 15,70   | Bien
+  5    | David ROUSSEAU             | 14,80   | Bien
+  6    | Olivier NGUYEN             | 14,50   | Bien
+  7    | Gabrielle GIRARD           | 13,70   | Assez Bien
+  8    | Baptiste MARTIN            | 13,30   | Assez Bien
+  9    | Jules JACQUET              | 12,10   | Assez Bien
+  10   | Pauline PERRET             | 11,50   | Passable
+  11   | Maxime LAMBERT             | 10,60   | Passable
+  12   | François FONTAINE          | 9,90    | Insuffisant
+  13   | Clara LEMOINE              | 9,30    | Insuffisant
+  14   | Nadia MOREAU               | 8,10    | Insuffisant
+  15   | Hugo HENRY                 | 7,10    | Insuffisant
+
