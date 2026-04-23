@@ -44,10 +44,10 @@ public class Gestionnaire {
             throw new IllegalStateException("Aucun étudiant chargé. Vérifiez : " + source);
     }
 
-    /**
-     * Trie la liste par moyenne décroissante.
-     * En cas d'égalité : ordre alphabétique par nom.
-     */
+
+     // Trie la liste par moyenne décroissante.
+     // En cas d'égalité : ordre alphabétique par nom.
+
     public void trierParMoyenne() {
         Collections.sort(etudiants,
                 Comparator.comparingDouble(Etudiant::calculerMoyenne)

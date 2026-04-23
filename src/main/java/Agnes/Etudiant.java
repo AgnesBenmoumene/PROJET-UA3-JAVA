@@ -9,20 +9,20 @@ public class Etudiant {
     //  Attributs privés
     private String nom;
     private String prenom;
-    private Map<String, Double> notes; // matière → note sur 20
+    private Map<String, Double> notes; //  associer chaque note a une matiere
 
     //  Constructeur
 
     public Etudiant(String nom, String prenom) {
         this.nom    = nom;
         this.prenom = prenom;
-        this.notes  = new LinkedHashMap<>(); // ordre d'insertion conservé
+        this.notes  = new LinkedHashMap<>(); //  conserver l'ordre d'insertion
     }
 
     //  Méthodes métier
 
 
-    public void addNote(String matiere, double note) {
+    public void addNote(String matiere, double note) {//pour alimenter ce dictionnaire au fur et à mesure
         this.notes.put(matiere, note);
     }
 
@@ -35,8 +35,9 @@ public class Etudiant {
     }
 
 
-    public String getNomComplet() {
-        return prenom + " " + nom.toUpperCase();
+    public String getNomComplet()//combiner le nom et prenom
+     {
+        return prenom + " " + nom.toUpperCase();//transformer toutes les lettres du nom en capitales
     }
 
     //  Redéfinition de Object
@@ -47,7 +48,7 @@ public class Etudiant {
                 getNomComplet(), calculerMoyenne());
     }
 
-    @Override
+    @Override //éviter les dublons
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (!(obj instanceof Etudiant)) return false;

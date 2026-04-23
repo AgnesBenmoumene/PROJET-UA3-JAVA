@@ -13,10 +13,13 @@ public abstract class ExporteurBase implements IExporteurResultats {
     @Override
     public final void exporter(List<Etudiant> etudiants, String destination) throws IOException {
         File fichier = new File(destination);
-        if (fichier.getParentFile() != null) fichier.getParentFile().mkdirs();
+        if (fichier.getParentFile() != null) fichier.getParentFile().mkdirs();//extraire le chemin du répertoire qui doit contenir mon fichier d'exportation
+        // si il existe pas encore mkdirs le cree
 
-        try (BufferedWriter writer = new BufferedWriter(
-                new OutputStreamWriter(new FileOutputStream(fichier), StandardCharsets.UTF_8))) {
+        try (BufferedWriter writer = new BufferedWriter(//Stocker les données pour les écrire d'un seul coup
+                new OutputStreamWriter /*l reçoit le texte de Java et le traduit en binaire. On lui donne le dictionnaire */
+                        (new FileOutputStream(fichier)//Il ne comprend que le langage binaire (les 0 et les 1)
+                        , StandardCharsets.UTF_8))) {
             ecrireContenu(writer, etudiants);
         }
         System.out.printf("Le fichier a été exporté vers '%s'%n", destination);
